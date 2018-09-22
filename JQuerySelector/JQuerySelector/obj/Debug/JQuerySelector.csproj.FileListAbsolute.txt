@@ -1,0 +1,4 @@
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQuerySelector\JQuerySelector\bin\JQuerySelector.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQuerySelector\JQuerySelector\bin\JQuerySelector.pdb
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQuerySelector\JQuerySelector\obj\Debug\JQuerySelector.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQuerySelector\JQuerySelector\obj\Debug\JQuerySelector.pdb

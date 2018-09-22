@@ -1,0 +1,61 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClassSelector.aspx.cs"
+    Inherits="JQueryPracticeApp.ClassSelector" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //$('.small').css('border', '5px solid red');
+            //$('.small,.big').css('border', '5px solid red');
+            //$('.small,span.big').css('border', '5px solid red');
+
+            //$('#div2 .small').css('border', '5px solid red');
+
+            //$('.small.big').css('border', '5px solid red'); 
+            //$('.small').filter('.big').css('border', '5px solid red');
+
+            $('.small .big').css('border', '5px solid red');
+
+        });
+    </script>
+</head>
+<body>
+    <span class="small">Span 1 </span>
+    <br />
+    <br />
+    <div class="small">
+        Div 1
+    </div>
+    <br />
+    <span class="big">Span 2 </span>
+    <p class="big">
+        This is a paragraph</p>
+    -----------------------------------------------
+    <div id="div1" class="small">
+    DIV1
+    </div>
+    <div id="div2">
+    DIV2
+        <div id="div2sub" class="small">
+        DIVSUB
+        </div>
+        <span class="small">SPAN</span>
+    </div>
+
+     -----------------------------------------------
+
+     <div class="small big">
+     DIV SMALL BIG
+     </div>
+     <div class="small">
+     DIV SMALL
+     <div class="big">
+     BIG NESTED INSIDE SMALL
+     </div>
+     </div>
+</body>
+</html>
