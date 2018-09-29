@@ -1,0 +1,4 @@
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQueryEvents\JQueryEvents\bin\JQueryEvents.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQueryEvents\JQueryEvents\bin\JQueryEvents.pdb
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQueryEvents\JQueryEvents\obj\Debug\JQueryEvents.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQueryEvents\JQueryEvents\obj\Debug\JQueryEvents.pdb

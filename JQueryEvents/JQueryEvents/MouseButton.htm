@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+//        function whichMouseButtonClicked(event) {
+//            var whichButton;
+//            if (event.which) {
+//                switch (event.which) {
+//                    case 1: whichButton = "Left Button Clicked"; break;
+//                    case 2: whichButton = "Middle Button Clicked"; break;
+//                    case 3: whichButton = "Right Button Clicked"; break;
+//                    default: whichButton = "Invalid Button Clicked"; break;
+//                }
+//            }
+//            else {
+//                switch (event.button) {
+//                    case 1: whichButton = "Left Button Clicked"; break;
+//                    case 4: whichButton = "Middle Button Clicked"; break;
+//                    case 2: whichButton = "Right Button Clicked"; break;
+//                    default: whichButton = "Invalid Button Clicked"; break;
+//                }
+//            }
+
+//            document.getElementById('divResult').innerHTML = whichButton;
+//        }
+
+
+        $(document).ready(function () {
+            $('#btn').mouseup(function (event) {
+                switch (event.which) {
+                    case 1: whichButton = "Left Button Clicked"; break;
+                    case 2: whichButton = "Middle Button Clicked"; break;
+                    case 3: whichButton = "Right Button Clicked"; break;
+                    default: whichButton = "Invalid Button Clicked"; break;
+                }
+                $('#divResult').html(whichButton);
+            });
+        });
+
+    </script>
+</head>
+<body style="font-family:Arial">
+    <input id="btn" type="button" value="Click Me"
+           <!--onmouseup="whichMouseButtonClicked(event)"--> />
+    <br /><br />
+    <div id="divResult"></div>
+</body>
+</html>

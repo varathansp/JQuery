@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .ButtonStyle {
+            background-color: red;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+  
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnClickMe').on('click mouseover mouseout', function (event) {
+                if (event.type == 'click') {
+                    $('#divResult').html('Button Clicked at ' + 'X = '
+                        + event.pageX + ' Y = ' + event.pageY);
+                }
+                else if (event.type == 'mouseover') {
+                    $(this).addClass('ButtonStyle');
+                }
+                else {
+                    $(this).removeClass('ButtonStyle');
+                }
+            });
+
+            $('#btnEnableMouseOverEffect').click(function () {
+                $('#btnClickMe').on('mouseover', function () {
+                    $(this).addClass('ButtonStyle');
+                });
+            });
+
+            $('#btnDisableMouseOverEffect').click(function () {
+                $('#btnClickMe').off('mouseover');
+            });
+        });
+
+//        $('#btnClickMe').bind({
+//            click: function (event) {
+//                $('#divResult').html('Button clicked at X = '
+//            + event.pageX + ' Y = ' + event.pageY);
+//            },
+//            mouseover: function () {
+//                $(this).addClass('ButtonStyle');
+//            },
+//            mouseout: function () {
+//                $(this).removeClass('ButtonStyle');
+//            }
+//        });
+    </script>
+</head>
+<body style="font-family:Arial">
+    <input id="btnClickMe" type="button" value="Click Me" />
+    <input id="btnEnableMouseOverEffect" type="button"
+           value="Enable Mouse Over Effect" />
+    <input id="btnDisableMouseOverEffect" type="button"
+           value="Disable Mouse Over Effect" />
+    <br /><br />
+    <div id="divResult"></div>
+</body>
+</html>
