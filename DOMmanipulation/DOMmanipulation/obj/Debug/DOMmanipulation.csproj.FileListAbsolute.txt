@@ -1,0 +1,4 @@
+c:\users\vsuyambu\documents\visual studio 2010\Projects\DOMmanipulation\DOMmanipulation\bin\DOMmanipulation.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\DOMmanipulation\DOMmanipulation\bin\DOMmanipulation.pdb
+c:\users\vsuyambu\documents\visual studio 2010\Projects\DOMmanipulation\DOMmanipulation\obj\Debug\DOMmanipulation.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\DOMmanipulation\DOMmanipulation\obj\Debug\DOMmanipulation.pdb

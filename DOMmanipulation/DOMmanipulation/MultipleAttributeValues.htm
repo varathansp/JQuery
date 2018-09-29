@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    
+     <script type="text/javascript">
+
+         $(document).ready(function () {
+             var config = {
+                 'title': 'New Div Title',
+                 'style': 'border:3px solid red;',
+                 'name': 'My Div'
+             };
+
+             $('div').attr(config);
+//             $('div')
+//    .attr('title', 'New Div Title')
+//    .attr('style', 'border:3px solid red;')
+//    .attr('name', 'My Div');
+             var result = '';
+             $('div').each(function () {
+                 result += 'title = ' + $(this).attr('title') + '<br/>';
+                 result += 'style = ' + $(this).attr('style') + '<br/>';
+                 result += 'name = ' + $(this).attr('name') + '<br/><br/>';
+             });
+
+             $('#resultSpan').html(result);
+         });
+    </script>
+</head>
+<body style="font-family:Arial">
+    <div id="div1" title="My DIV1">
+        DIV 1
+    </div>
+    <br />
+    <div id="div2" title="My DIV2">
+        DIV 2
+    </div>
+    <br />
+    <span id="resultSpan">
+    </span>
+</body>
+</html>

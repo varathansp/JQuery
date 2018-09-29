@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <style type="text/css">
+        .boldClass
+        {
+            font-weight: bold;
+        }
+        
+        .italicsClass
+        {
+            font-style: italic;
+        }
+        
+        .colorClass
+        {
+            color: red;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                $('p').addClass('colorClass');
+            });
+
+            $('#btn2').click(function () {
+                $('p').removeClass('colorClass');
+            });
+
+            $('#btn3').click(function () {
+                $('p').addClass('colorClass italicsClass');
+            });
+
+            $('#btn4').click(function () {
+                $('p').removeClass('colorClass italicsClass');
+            });
+
+            $('#btn5').click(function () {
+                $('p').addClass('colorClass italicsClass boldClass');
+            });
+
+            $('#btn6').click(function () {
+                $('p').removeClass();
+            });
+
+
+            $('#btn7').click(function () {
+                $('p').toggleClass('colorClass italicsClass boldClass');
+            });
+        });
+    </script>
+</head>
+<body style="font-family: Arial">
+    <p>
+        JQuery</p>
+    <table>
+        <tr>
+            <td>
+                <input id="btn1" style="width: 250px" type="button" value="Add Color Class" />
+            </td>
+            <td>
+                <input id="btn2" style="width: 250px" type="button" value="Remove Color Class" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="btn3" style="width: 250px" type="button" value="Add Color and Italics Classes" />
+            </td>
+            <td>
+                <input id="btn4" style="width: 250px" type="button" value="Remove Color and Italics Classes" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="btn5" style="width: 250px" type="button" value="Add Color, Italics & Bold Classes" />
+            </td>
+            <td>
+                <input id="btn6" style="width: 250px" type="button" value="Remove All Classes" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="btn7" style="width: 250px" type="button" value="Toggle" />
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

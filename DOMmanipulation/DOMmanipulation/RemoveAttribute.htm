@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="Scripts/jquery-1.4.1.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function () {
+              var result = 'DIV Elements with title attribute = ' + $('div[title]').length + '<br/>';
+              result += 'Removing title attribute <br/>';
+              $('div[title]').removeAttr('title');
+              result += 'DIV Elements with title attribute = ' + $('div[title]').length;
+
+              $('#resultSpan').html(result);
+          });
+    </script>
+</head>
+<body style="font-family:Arial">
+    <div id="div1" title="My DIV1">
+        DIV 1
+    </div>
+    <br />
+    <div id="div2" title="My DIV2">
+        DIV 2
+    </div>
+    <br />
+    <span id="resultSpan">
+    </span>
+</body>
+</html>
