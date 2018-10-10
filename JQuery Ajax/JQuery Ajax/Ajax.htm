@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var textboxes = $('input[type="text"]');
+            textboxes.focus(function () {
+                var helpDiv = $(this).attr('id');
+
+                $.ajax({
+                    url: 'AjaxLoadFromDbJSON.aspx',
+                    method: 'post',
+                    dataType: 'xml',
+                    data: { HelpTextKey: helpDiv },
+                    success: function (response) {
+
+                        var jQueryXml = $(response);
+                        var textElement = jQueryXml.find("Text");
+
+                        $('#' + helpDiv + 'HelpDiv').html(textElement.text());
+
+                    }
+                });
+
+
+            });
+            textboxes.blur(function () {
+                var helpDiv = $(this).attr('id') + 'HelpDiv';
+                $('#' + helpDiv).html('');
+            });
+
+        });
+
+    </script>
+</head>
+<body style="font-family: Arial">
+    <table>
+        <tr>
+            <td>
+                First Name
+            </td>
+            <td>
+                <input id="firstName" type="text" />
+            </td>
+            <td>
+                <div id="firstNameHelpDiv">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name
+            </td>
+            <td>
+                <input id="lastName" type="text" />
+            </td>
+            <td>
+                <div id="lastNameHelpDiv">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email
+            </td>
+            <td>
+                <input id="email" type="text" />
+            </td>
+            <td>
+                <div id="emailHelpDiv">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Income
+            </td>
+            <td>
+                <input id="income" type="text" />
+            </td>
+            <td>
+                <div id="incomeHelpDiv">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="divStatus">
+    </div>
+</body>
+</html>
