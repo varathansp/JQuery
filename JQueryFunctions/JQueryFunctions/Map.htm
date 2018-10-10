@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+ //           var result = [];
+
+//            $('li').each(function (index, element) {
+//                result.push($(element).text());
+//            });
+
+//            alert(result);
+
+           
+            //Map()
+            alert($('li').map(function (index, element) {
+                return $(element).text();
+            }).get());
+
+            //Each()
+            var result = '';
+
+            $('li').each(function (index, element) {
+                result += $(element).text() + "|";
+            });
+            result = result.substr(0, result.length - 1);
+
+            alert(result);
+
+            //Map()
+            alert($('li').map(function (index, element) {
+                return $(element).text();
+            }).get().join('|'));
+
+        });
+    </script>
+</head>
+<body>
+<ul>
+    <li>US</li>
+    <li>India</li>
+    <li>UK</li>
+    <li>Canada</li>
+    <li>Australia</li>
+</ul>
+
+</body>
+</html>

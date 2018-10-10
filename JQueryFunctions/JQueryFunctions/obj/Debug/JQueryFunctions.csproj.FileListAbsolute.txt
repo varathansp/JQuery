@@ -1,0 +1,4 @@
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQueryFunctions\JQueryFunctions\bin\JQueryFunctions.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQueryFunctions\JQueryFunctions\bin\JQueryFunctions.pdb
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQueryFunctions\JQueryFunctions\obj\Debug\JQueryFunctions.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQueryFunctions\JQueryFunctions\obj\Debug\JQueryFunctions.pdb
