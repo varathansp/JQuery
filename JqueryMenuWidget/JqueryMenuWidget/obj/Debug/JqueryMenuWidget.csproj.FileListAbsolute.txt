@@ -1,0 +1,4 @@
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JqueryMenuWidget\JqueryMenuWidget\bin\JqueryMenuWidget.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JqueryMenuWidget\JqueryMenuWidget\bin\JqueryMenuWidget.pdb
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JqueryMenuWidget\JqueryMenuWidget\obj\Debug\JqueryMenuWidget.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JqueryMenuWidget\JqueryMenuWidget\obj\Debug\JqueryMenuWidget.pdb
