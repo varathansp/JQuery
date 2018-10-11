@@ -1,0 +1,4 @@
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQuery Slider\JQuery Slider\bin\JQuery Slider.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQuery Slider\JQuery Slider\bin\JQuery Slider.pdb
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQuery Slider\JQuery Slider\obj\Debug\JQuery Slider.dll
+c:\users\vsuyambu\documents\visual studio 2010\Projects\JQuery Slider\JQuery Slider\obj\Debug\JQuery Slider.pdb
